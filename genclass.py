@@ -356,6 +356,9 @@ class GenerativeClassifier( object ):
 
 	def predict_labels( self, x_test, y_test ):
 
+		test_vars = tf.get_collection(bookkeeper.GraphKeys.TEST_VARIABLES)
+		tf.initialize_variables(test_vars).run()
+
 		x_test_mu = x_test[:,:self.dim_x]
 		x_test_lsgms = x_test[:,self.dim_x:2*self.dim_x]
 

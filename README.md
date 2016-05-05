@@ -1,7 +1,7 @@
 # Replication of Semi-Supervised Learning with Deep Generative Models
-> Paper: [Semi-Supervised Learning with Deep Generative Models](http://arxiv.org/abs/1406.5298)
-> Authors: Diederik P. Kingma, Danilo J. Rezende, Shakir Mohamed, Max Welling
-> Original Implementation: [github](https://github.com/dpkingma/nips14-ssl)
+> - Paper: [Semi-Supervised Learning with Deep Generative Models](http://arxiv.org/abs/1406.5298)
+> - Authors: Diederik P. Kingma, Danilo J. Rezende, Shakir Mohamed, Max Welling
+> - Original Implementation: [github](https://github.com/dpkingma/nips14-ssl)
 
 Implements the latent-feature discriminative model (M1) and generative semi-supervised model (M2) from the paper in TensorFlow (python).
 
@@ -16,9 +16,10 @@ Implements the latent-feature discriminative model (M1) and generative semi-supe
 
 - To train latent-feature model (M1) run train_vae.py. Parameters set in same file.
 - To train M1+M2 classifier run train_classifier.py. Parameters set in same file. Location of saved M1 (VAE) model must be specified.
+- Using the provided VAE model and the given parameters should produce an accuracy of about 95.4% on the test set using 100 labelled examples.
 
 <img src="img/analogies.png" align="center" />
-Example of the style and orientation learnt by the generative semi-supervised model in the latent variable (z). Generated using this implementation to replicate qualitative results from the paper.
+Example of the style and orientation learnt by the generative semi-supervised model in the latent variable (z) on the MNIST dataset. Generated using this implementation to replicate qualitative results from the paper.
 
 ## Credits
 
